@@ -141,6 +141,7 @@
         connectMessage:(MQTTMessage*)theConnectMessage
                runLoop:(NSRunLoop*)theRunLoop
                forMode:(NSString*)theRunLoopMode {
+    self = [super init];
     clientId = theClientId;
     keepAliveInterval = theKeepAliveInterval;
     connectMessage = theConnectMessage;
