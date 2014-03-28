@@ -49,7 +49,7 @@ typedef enum {
     MQTTEncoder*         encoder;
     MQTTDecoder*         decoder;
     UInt16               txMsgId;
-    id                   delegate;
+    __weak id            delegate;
     NSMutableDictionary* txFlows;
     NSMutableDictionary* rxFlows;
     unsigned int         ticks;
